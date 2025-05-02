@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js.download"></script><style>.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .services-section {
+    flex: 1 1;
+    max-width: 300px;
+  }
+  
+  .services-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .services-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+  }
+  
+  .services-list li {
+    margin-bottom: 10px;
+  }
+  
+  .image-section {
+    flex: 2 1;
+    text-align: center;
+  }
+  
+  .hospital-image {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-top: 7px;
+  }
+  
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9wYWdlcy9EYXNoYm9hcmQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsYUFBYTtJQUNiLFNBQVM7SUFDVCxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsU0FBTztJQUNQLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLGVBQWU7SUFDZixtQkFBbUI7RUFDckI7O0VBRUE7SUFDRSxxQkFBcUI7SUFDckIsZUFBZTtJQUNmLGlCQUFpQjtFQUNuQjs7RUFFQTtJQUNFLG1CQUFtQjtFQUNyQjs7RUFFQTtJQUNFLFNBQU87SUFDUCxrQkFBa0I7RUFDcEI7O0VBRUE7SUFDRSxXQUFXO0lBQ1gsZ0JBQWdCO0lBQ2hCLG1CQUFtQjtJQUNuQixlQUFlO0VBQ2pCIiwic291cmNlc0NvbnRlbnQiOlsiLmRhc2hib2FyZC1jb250YWluZXIge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XHJcbiAgICBwYWRkaW5nOiAzMHB4O1xyXG4gICAgZ2FwOiA0MHB4O1xyXG4gICAgZmxleC13cmFwOiB3cmFwO1xyXG4gIH1cclxuICBcclxuICAuc2VydmljZXMtc2VjdGlvbiB7XHJcbiAgICBmbGV4OiAxO1xyXG4gICAgbWF4LXdpZHRoOiAzMDBweDtcclxuICB9XHJcbiAgXHJcbiAgLnNlcnZpY2VzLXNlY3Rpb24gaDIge1xyXG4gICAgZm9udC1zaXplOiAyNHB4O1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMTVweDtcclxuICB9XHJcbiAgXHJcbiAgLnNlcnZpY2VzLWxpc3Qge1xyXG4gICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xyXG4gICAgcGFkZGluZy1sZWZ0OiAwO1xyXG4gICAgZm9udC1zaXplOiAxLjFyZW07XHJcbiAgfVxyXG4gIFxyXG4gIC5zZXJ2aWNlcy1saXN0IGxpIHtcclxuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5pbWFnZS1zZWN0aW9uIHtcclxuICAgIGZsZXg6IDI7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gIFxyXG4gIC5ob3NwaXRhbC1pbWFnZSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIG1heC13aWR0aDogNzAwcHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG4gICAgbWFyZ2luLXRvcDogN3B4O1xyXG4gIH1cclxuICAiXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.patients-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .left-side {
+    flex: 2 1;
+    margin-right: 20px;
+  }
+  
+  .right-side {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* space between images */
+  }
+  .patient-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+  }
+  
+  .patient-form input {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  .patient-form button {
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .patient-list {
+    margin-top: 20px;
+  }
+  
+  .patient-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .patient-list li {
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .patients-image {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 8px;
+    
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9wYWdlcy9QYXRpZW50cy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLHVCQUF1QjtJQUN2QixhQUFhO0VBQ2Y7O0VBRUE7SUFDRSxTQUFPO0lBQ1Asa0JBQWtCO0VBQ3BCOztFQUVBO0lBQ0UsU0FBTztJQUNQLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLFNBQVMsRUFBRSx5QkFBeUI7RUFDdEM7RUFDQTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsU0FBUztJQUNULGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLFlBQVk7SUFDWixlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsWUFBWTtJQUNaLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osWUFBWTtJQUNaLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxxQkFBcUI7SUFDckIsVUFBVTtFQUNaOztFQUVBO0lBQ0UsbUJBQW1CO0lBQ25CLHlCQUF5QjtJQUN6QixhQUFhO0lBQ2Isa0JBQWtCO0VBQ3BCOztFQUVBO0lBQ0UsVUFBVTtJQUNWLGdCQUFnQjtJQUNoQixrQkFBa0I7O0lBRWxCLHFDQUFxQztFQUN2QztFQUNBO0lBQ0UsVUFBVTtJQUNWLGVBQWU7SUFDZixnQkFBZ0I7RUFDbEIiLCJzb3VyY2VzQ29udGVudCI6WyIucGF0aWVudHMtY29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgICBhbGlnbi1pdGVtczogZmxleC1zdGFydDtcclxuICAgIHBhZGRpbmc6IDIwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5sZWZ0LXNpZGUge1xyXG4gICAgZmxleDogMjtcclxuICAgIG1hcmdpbi1yaWdodDogMjBweDtcclxuICB9XHJcbiAgXHJcbiAgLnJpZ2h0LXNpZGUge1xyXG4gICAgZmxleDogMTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGdhcDogMTVweDsgLyogc3BhY2UgYmV0d2VlbiBpbWFnZXMgKi9cclxuICB9XHJcbiAgLnBhdGllbnQtZm9ybSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGdhcDogMTBweDtcclxuICAgIG1heC13aWR0aDogNDAwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5wYXRpZW50LWZvcm0gaW5wdXQge1xyXG4gICAgcGFkZGluZzogOHB4O1xyXG4gICAgZm9udC1zaXplOiAxcmVtO1xyXG4gIH1cclxuICBcclxuICAucGF0aWVudC1mb3JtIGJ1dHRvbiB7XHJcbiAgICBwYWRkaW5nOiA4cHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNENBRjUwO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgYm9yZGVyOiBub25lO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIH1cclxuICBcclxuICAucGF0aWVudC1saXN0IHtcclxuICAgIG1hcmdpbi10b3A6IDIwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5wYXRpZW50LWxpc3QgdWwge1xyXG4gICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xyXG4gICAgcGFkZGluZzogMDtcclxuICB9XHJcbiAgXHJcbiAgLnBhdGllbnQtbGlzdCBsaSB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2YyZjJmMjtcclxuICAgIHBhZGRpbmc6IDEwcHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5wYXRpZW50cy1pbWFnZSB7XHJcbiAgICB3aWR0aDogODAlO1xyXG4gICAgbWF4LXdpZHRoOiA3MDBweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDhweDtcclxuICAgIFxyXG4gICAgYm94LXNoYWRvdzogMCAycHggNnB4IHJnYmEoMCwwLDAsMC4yKTtcclxuICB9XHJcbiAgLmVycm9yLW1lc3NhZ2Uge1xyXG4gICAgY29sb3I6IHJlZDtcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxuICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgfVxyXG4gIFxyXG4gICJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.appointments-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  flex-wrap: wrap;  /* Allows content to wrap on smaller screens */
+}
+
+.left-side {
+  flex: 1 1;
+  margin-right: 20px;
+  min-width: 300px;  /* Ensures left side doesn't get too narrow on small screens */
+}
+
+.right-side {
+  flex: 0.3 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centers the content vertically */
+  align-items: center;      /* Centers the content horizontally */
+  text-align: center;       /* Centers the text */
+  min-width: 250px;         /* Ensures right side doesn't get too narrow */
+}
+
+.goals {
+  text-align: left;         /* Align text to the left for better readability */
+  margin-bottom: 20px;
+}
+
+.goals h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;  /* Dark color for the heading */
+}
+
+.goals ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;  /* Lighter color for the list items */
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;  /* Optional: adds rounded corners to the image */
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .appointments-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-side {
+    flex: 1 1;
+    margin-top: 20px;
+    text-align: left;  /* Adjust text alignment for better readability on mobile */
+  }
+
+  .left-side {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;  /* Ensures the form takes up the full width on mobile */
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9wYWdlcy9BcHBvaW50bWVudHMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixZQUFZO0VBQ1osZUFBZSxHQUFHLDhDQUE4QztBQUNsRTs7QUFFQTtFQUNFLFNBQU87RUFDUCxrQkFBa0I7RUFDbEIsZ0JBQWdCLEdBQUcsOERBQThEO0FBQ25GOztBQUVBO0VBQ0UsV0FBUztFQUNULGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsdUJBQXVCLEdBQUcsbUNBQW1DO0VBQzdELG1CQUFtQixPQUFPLHFDQUFxQztFQUMvRCxrQkFBa0IsUUFBUSxxQkFBcUI7RUFDL0MsZ0JBQWdCLFVBQVUsOENBQThDO0FBQzFFOztBQUVBO0VBQ0UsZ0JBQWdCLFVBQVUsa0RBQWtEO0VBQzVFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixtQkFBbUI7RUFDbkIsV0FBVyxHQUFHLCtCQUErQjtBQUMvQzs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQixpQkFBaUI7RUFDakIsV0FBVyxHQUFHLHFDQUFxQztBQUNyRDs7QUFFQTtFQUNFLGVBQWU7RUFDZixZQUFZO0VBQ1osa0JBQWtCLEdBQUcsZ0RBQWdEO0FBQ3ZFOztBQUVBLGlCQUFpQjtBQUNqQjtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsU0FBUztBQUNYOztBQUVBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixzQkFBc0I7RUFDdEIsa0JBQWtCO0VBQ2xCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBLDBCQUEwQjtBQUMxQjtFQUNFO0lBQ0Usc0JBQXNCO0lBQ3RCLG1CQUFtQjtFQUNyQjs7RUFFQTtJQUNFLFNBQU87SUFDUCxnQkFBZ0I7SUFDaEIsZ0JBQWdCLEdBQUcsMkRBQTJEO0VBQ2hGOztFQUVBO0lBQ0UsZUFBZTtJQUNmLG1CQUFtQjtJQUNuQixXQUFXLEdBQUcsdURBQXVEO0VBQ3ZFO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuYXBwb2ludG1lbnRzLWNvbnRhaW5lciB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgbWFyZ2luOiAyMHB4O1xyXG4gIGZsZXgtd3JhcDogd3JhcDsgIC8qIEFsbG93cyBjb250ZW50IHRvIHdyYXAgb24gc21hbGxlciBzY3JlZW5zICovXHJcbn1cclxuXHJcbi5sZWZ0LXNpZGUge1xyXG4gIGZsZXg6IDE7XHJcbiAgbWFyZ2luLXJpZ2h0OiAyMHB4O1xyXG4gIG1pbi13aWR0aDogMzAwcHg7ICAvKiBFbnN1cmVzIGxlZnQgc2lkZSBkb2Vzbid0IGdldCB0b28gbmFycm93IG9uIHNtYWxsIHNjcmVlbnMgKi9cclxufVxyXG5cclxuLnJpZ2h0LXNpZGUge1xyXG4gIGZsZXg6IDAuMztcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICAvKiBDZW50ZXJzIHRoZSBjb250ZW50IHZlcnRpY2FsbHkgKi9cclxuICBhbGlnbi1pdGVtczogY2VudGVyOyAgICAgIC8qIENlbnRlcnMgdGhlIGNvbnRlbnQgaG9yaXpvbnRhbGx5ICovXHJcbiAgdGV4dC1hbGlnbjogY2VudGVyOyAgICAgICAvKiBDZW50ZXJzIHRoZSB0ZXh0ICovXHJcbiAgbWluLXdpZHRoOiAyNTBweDsgICAgICAgICAvKiBFbnN1cmVzIHJpZ2h0IHNpZGUgZG9lc24ndCBnZXQgdG9vIG5hcnJvdyAqL1xyXG59XHJcblxyXG4uZ29hbHMge1xyXG4gIHRleHQtYWxpZ246IGxlZnQ7ICAgICAgICAgLyogQWxpZ24gdGV4dCB0byB0aGUgbGVmdCBmb3IgYmV0dGVyIHJlYWRhYmlsaXR5ICovXHJcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxufVxyXG5cclxuLmdvYWxzIGgzIHtcclxuICBmb250LXNpemU6IDEuNXJlbTtcclxuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG4gIGNvbG9yOiAjMzMzOyAgLyogRGFyayBjb2xvciBmb3IgdGhlIGhlYWRpbmcgKi9cclxufVxyXG5cclxuLmdvYWxzIHVsIHtcclxuICBsaXN0LXN0eWxlLXR5cGU6IGRpc2M7XHJcbiAgbWFyZ2luLWxlZnQ6IDIwcHg7XHJcbiAgY29sb3I6ICM1NTU7ICAvKiBMaWdodGVyIGNvbG9yIGZvciB0aGUgbGlzdCBpdGVtcyAqL1xyXG59XHJcblxyXG4uaW1hZ2UgaW1nIHtcclxuICBtYXgtd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiBhdXRvO1xyXG4gIGJvcmRlci1yYWRpdXM6IDhweDsgIC8qIE9wdGlvbmFsOiBhZGRzIHJvdW5kZWQgY29ybmVycyB0byB0aGUgaW1hZ2UgKi9cclxufVxyXG5cclxuLyogRm9ybSBzdHlsaW5nICovXHJcbmZvcm0ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBnYXA6IDEwcHg7XHJcbn1cclxuXHJcbmlucHV0IHtcclxuICBwYWRkaW5nOiAxMHB4O1xyXG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgI2NjYztcclxuICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgZm9udC1zaXplOiAxNHB4O1xyXG59XHJcblxyXG5idXR0b24ge1xyXG4gIHBhZGRpbmc6IDEwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzRDQUY1MDtcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgYm9yZGVyOiBub25lO1xyXG4gIGJvcmRlci1yYWRpdXM6IDRweDtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgZm9udC1zaXplOiAxNHB4O1xyXG59XHJcblxyXG5idXR0b246aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM0NWEwNDk7XHJcbn1cclxuXHJcbi8qIE1vYmlsZSByZXNwb25zaXZlbmVzcyAqL1xyXG5AbWVkaWEgKG1heC13aWR0aDogNzY4cHgpIHtcclxuICAuYXBwb2ludG1lbnRzLWNvbnRhaW5lciB7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICB9XHJcblxyXG4gIC5yaWdodC1zaWRlIHtcclxuICAgIGZsZXg6IDE7XHJcbiAgICBtYXJnaW4tdG9wOiAyMHB4O1xyXG4gICAgdGV4dC1hbGlnbjogbGVmdDsgIC8qIEFkanVzdCB0ZXh0IGFsaWdubWVudCBmb3IgYmV0dGVyIHJlYWRhYmlsaXR5IG9uIG1vYmlsZSAqL1xyXG4gIH1cclxuXHJcbiAgLmxlZnQtc2lkZSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDA7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG4gICAgd2lkdGg6IDEwMCU7ICAvKiBFbnN1cmVzIHRoZSBmb3JtIHRha2VzIHVwIHRoZSBmdWxsIHdpZHRoIG9uIG1vYmlsZSAqL1xyXG4gIH1cclxufVxyXG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>/* src/styles/App.css */
+
+/* General styling for the whole app */
+* {
+  border: 0px solid rgb(9, 255, 0);
+}
+ 
+body {
+  background-color: rgb(141, 141, 131) !important;
+  }
+.App {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    font-size: medium;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: rgba(255, 0, 0, 0.377) !important;
+    font-size: 20px !important;
+    border: 5px solid yellow !important;
+  }
+  
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    padding: 10px 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar a:hover {
+    color: #ddd;
+  }
+  
+  /* Styling for the main content area */
+  .main-content {
+    flex: 1 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Add some spacing around the page content */
+  .page-container {
+    margin-top: 20px;
+  }
+  
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9zdHlsZXMvQXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSx1QkFBdUI7O0FBRXZCLHNDQUFzQztBQUN0QztFQUNFLGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLCtDQUErQztFQUMvQztBQUNGO0lBQ0ksOEJBQThCO0lBQzlCLGFBQWE7SUFDYixXQUFXO0lBQ1gsYUFBYTtJQUNiLGlCQUFpQjtJQUNqQixzQkFBc0I7SUFDdEIsYUFBYTtFQUNmOztFQUVBLG1CQUFtQjtFQUNuQjtJQUNFLG1EQUFtRDtJQUNuRCwwQkFBMEI7SUFDMUIsbUNBQW1DO0VBQ3JDOzs7RUFHQTtJQUNFLHFCQUFxQjtJQUNyQixhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLFNBQVM7SUFDVCxVQUFVO0VBQ1o7O0VBRUE7SUFDRSxrQkFBa0I7RUFDcEI7O0VBRUE7SUFDRSxxQkFBcUI7SUFDckIsWUFBWTtFQUNkOztFQUVBO0lBQ0UsV0FBVztFQUNiOztFQUVBLHNDQUFzQztFQUN0QztJQUNFLFNBQU87SUFDUCxhQUFhO0lBQ2IsZ0JBQWdCO0VBQ2xCOztFQUVBLDZDQUE2QztFQUM3QztJQUNFLGdCQUFnQjtFQUNsQiIsInNvdXJjZXNDb250ZW50IjpbIi8qIHNyYy9zdHlsZXMvQXBwLmNzcyAqL1xyXG5cclxuLyogR2VuZXJhbCBzdHlsaW5nIGZvciB0aGUgd2hvbGUgYXBwICovXHJcbioge1xyXG4gIGJvcmRlcjogMHB4IHNvbGlkIHJnYig5LCAyNTUsIDApO1xyXG59XHJcbiBcclxuYm9keSB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDE0MSwgMTQxLCAxMzEpICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG4uQXBwIHtcclxuICAgIGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjtcclxuICAgIHBhZGRpbmc6IDEwcHg7XHJcbiAgICBtYXJnaW46IDVweDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmb250LXNpemU6IG1lZGl1bTtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBoZWlnaHQ6IDEwMHZoO1xyXG4gIH1cclxuICBcclxuICAvKiBOYXZiYXIgc3R5bGluZyAqL1xyXG4gIC5uYXZiYXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsIDAsIDAsIDAuMzc3KSAhaW1wb3J0YW50O1xyXG4gICAgZm9udC1zaXplOiAyMHB4ICFpbXBvcnRhbnQ7XHJcbiAgICBib3JkZXI6IDVweCBzb2xpZCB5ZWxsb3cgIWltcG9ydGFudDtcclxuICB9XHJcbiAgXHJcbiAgXHJcbiAgLm5hdmJhciB1bCB7XHJcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBtYXJnaW46IDA7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gIH1cclxuICBcclxuICAubmF2YmFyIGxpIHtcclxuICAgIHBhZGRpbmc6IDEwcHggMjBweDtcclxuICB9XHJcbiAgXHJcbiAgLm5hdmJhciBhIHtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgXHJcbiAgLm5hdmJhciBhOmhvdmVyIHtcclxuICAgIGNvbG9yOiAjZGRkO1xyXG4gIH1cclxuICBcclxuICAvKiBTdHlsaW5nIGZvciB0aGUgbWFpbiBjb250ZW50IGFyZWEgKi9cclxuICAubWFpbi1jb250ZW50IHtcclxuICAgIGZsZXg6IDE7XHJcbiAgICBwYWRkaW5nOiAyMHB4O1xyXG4gICAgb3ZlcmZsb3cteTogYXV0bztcclxuICB9XHJcbiAgXHJcbiAgLyogQWRkIHNvbWUgc3BhY2luZyBhcm91bmQgdGhlIHBhZ2UgY29udGVudCAqL1xyXG4gIC5wYWdlLWNvbnRhaW5lciB7XHJcbiAgICBtYXJnaW4tdG9wOiAyMHB4O1xyXG4gIH1cclxuICAiXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><nav class="navbar"><ul><li><a href="http://localhost:3000/" data-discover="true">Dashboard</a></li><li><a href="http://localhost:3000/patients" data-discover="true">Patients</a></li><li><a href="http://localhost:3000/appointments" data-discover="true">Appointments</a></li></ul></nav><div class="main-content"><div class="dashboard-container"><div class="image-section"><h1>Welcome to the Addis Hospital</h1><img alt="Hospital" class="hospital-image" src="./React App_files/modern-public-hospital-building-3d-600w-2240217303.webp"></div><div class="services-section"><h2>Our Services</h2><ul class="services-list"><li>🏥 Emergency Room</li><li>🏥 Outpatient Services</li><li>🏥 Surgery</li><li>🏥 Pediatrics</li><li>🏥 Radiology &amp; Imaging</li><li>🏥 Pharmacy</li><li>🏥 Laboratory</li><li>🏥 Maternity Ward</li><li>🏥 Cardiology</li><li>🏥 ICU (Intensive Care Unit)</li></ul></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
